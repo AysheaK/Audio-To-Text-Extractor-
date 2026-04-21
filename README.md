@@ -3,10 +3,30 @@
 **Private, local speech-to-text for Windows (and other platforms that run Python).**  
 Transcribe audio or video files—or record from your microphone—using **OpenAI Whisper** via [**faster-whisper**](https://github.com/SYSTRAN/faster-whisper). Nothing is uploaded to the cloud; processing stays on your machine.
 
-*(Optional: add a screenshot to this README with `![UI](docs/screenshot.png)` after you save an image under `docs/`.)*
+
 <img width="1920" height="1045" alt="image" src="https://github.com/user-attachments/assets/46f407ab-bae1-46e1-a8ae-d555bd0ede75" />
 
 ---
+Notiec This App: 
+
+AudioToText — CPU (short guide)
+================================
+
+✓ FASTER (good for this app)
+   • Modern CPU (last ~5–8 years), AVX2, 8+ fast cores
+   • Examples: Intel Core 12th gen+ i5/i7/i9 · AMD Ryzen 5000/7000/9000
+   • + NVIDIA GPU + “Auto” in app = much faster Whisper
+
+✓ OK (usable)
+   • 4+ cores, 8 GB RAM → tiny/base models, short files
+   • 16 GB RAM → more headroom for medium models
+
+✗ SLOW (expect long waits on big files / large models)
+   • Very old CPUs (e.g. many-core Xeons from 10+ years ago)
+   • CPU-only + medium/large Whisper on long recordings
+
+Tip: Smaller model (tiny/base) + GPU if available = quickest runs.
+
 
 ## Features
 
